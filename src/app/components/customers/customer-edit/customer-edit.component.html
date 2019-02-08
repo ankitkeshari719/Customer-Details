@@ -1,0 +1,58 @@
+<div class="container edit_Container">
+  <img
+    src="https://lh3.googleusercontent.com/FkK5QNolozAHR6_oRZ9RjSicC8oiBIBWtNf9DMOHztVe5CRhvXqhEqx5Ut5xQANqLk4=s180-rw"
+    class="img-responsive"
+    style="max-height:300px"
+  />
+  <form [formGroup]="customerForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Customer Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        formControlName="name"
+        [value]="customer && customer.name"
+      />
+    </div>
+    <div class="form-group">
+      <label for="age">Customer working together (years)</label>
+      <input
+        type="number"
+        class="form-control"
+        id="age"
+        formControlName="age"
+        [value]="customer && customer.age"
+      />
+    </div>
+    <div >
+      <div class="form-check status_div">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="status"
+          id="active"
+          value="1"
+          formControlName="status"
+          [checked]="customer && customer.active"
+        />
+        <label class="form-check-label" for="active"> Active </label>
+      </div>
+      <div class="form-check status_div">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="status"
+          id="inactive"
+          formControlName="status"
+          value="0"
+          [checked]="customer && !customer.active"
+        />
+        <label class="form-check-label" for="inactive"> Inactive </label>
+      </div>
+    </div>
+    <div class="wrapper pull-right">
+      <button type="submit" class="btn btn-primary btn-lg">Update</button>
+    </div>
+  </form>
+</div>

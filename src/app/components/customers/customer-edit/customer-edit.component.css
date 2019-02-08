@@ -1,0 +1,12 @@
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper {
+  text-align: center;
+}
+.status_div {
+  float: left;
+  margin-right: 5px;
+}

@@ -1,0 +1,15 @@
+a {
+  cursor: pointer;
+  margin: 20px;
+}
+img {
+  margin-top: 20px;
+  border-radius: 50%;
+}
+.customer_name {
+  display: inline-block;
+  width: 320px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}

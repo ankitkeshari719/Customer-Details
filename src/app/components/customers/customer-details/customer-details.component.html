@@ -1,0 +1,23 @@
+<div class="container text-center">
+  <img
+    src="https://lh3.googleusercontent.com/FkK5QNolozAHR6_oRZ9RjSicC8oiBIBWtNf9DMOHztVe5CRhvXqhEqx5Ut5xQANqLk4=s180-rw"
+    alt="img"
+    class="img-responsive"
+    style="max-height:300px"
+  />
+  <h1>
+    {{ customer && customer.name
+    }} <span
+      ><u
+        ><small id="customer_status" class="text-success"
+          ><b>{{
+            customer && customer.active ? "Active" : "Inactive"
+          }}</b></small
+        ></u
+      ></span
+    >
+  </h1>
+  <h4>Innovating since {{ customer && customer.age }} year.</h4>
+  <button class="btn btn-success" (click)="onEditCustomer()">Edit</button>&nbsp;
+  <button class="btn btn-danger" (click)="onDeleteCustomer()">Delete</button>
+</div>

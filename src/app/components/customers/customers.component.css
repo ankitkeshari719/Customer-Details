@@ -1,3 +1,8 @@
+.customer_list {
+  height: 500px;
+  overflow-y: scroll;
+  background-color: #F1F3F4;
+}
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -13,12 +18,4 @@ hr {
   width: 500px;
   border-top: 1px solid #f8f8f8;
   border-bottom: 4px solid rgba(0, 0, 0, 0.2);
-}
-.customer_list {
-  height: 500px;
-  overflow-y: scroll;
-  background-color: #f1f3f4;
-}
-section {
-  padding-top: 4rem;
 }
